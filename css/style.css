@@ -391,7 +391,7 @@ body.offcanvas {
     background: #f2f3f7;
     z-index: 999;
     position: fixed; }
-  body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
+  body.offcanvas #colorlib-main, body.otimelineffcanvas .colorlib-nav-toggle {
     top: 0;
     -moz-transform: translateX(300px);
     -webkit-transform: translateX(300px);
@@ -633,7 +633,17 @@ body.offcanvas {
   margin-left: -9px; }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p + p {
-  margin-top: 30px; }
+  margin-top: -30px; }
+
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h1 {
+    margin-top: -100px;
+    font-size: 15px; 
+    color: #2c98f0;
+    padding-left: 10px;
+  display: inline-block;}
+
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
+    margin-top: 20px; }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
   font-size: 20px;
@@ -642,6 +652,9 @@ body.offcanvas {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
   color: #000; }
+
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h1 a {
+    color: #000; }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
   -webkit-opacity: .4;
